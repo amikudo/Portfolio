@@ -1,0 +1,135 @@
+body {
+    background: url("../img/bg-img4.png") center center / cover no-repeat;
+    background-color: white;
+    font-family: 'Kameron', 'Shippori Mincho', 'sans-serif';
+    height:100vh;
+    margin:0;
+}
+
+.header {
+    background-size: cover;
+    color:black;
+    height:100vh;
+    overflow: hidden;
+}
+
+.content {
+    margin-left: 5px;
+    position: absolute;
+    width: 27%;
+    top: 45%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.mask {
+    width: 100%;
+}
+	
+.cls-1{
+    fill:white;
+}
+
+.cls-2{
+    fill:none;
+    stroke:white;
+    stroke-miterlimit:10;
+    stroke-width:12px;
+}
+
+#nav {
+    position: absolute;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin: -10px 0 50px 0;
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+   
+#nav li {
+    width: 140px;
+    text-align: center;
+    float: left;
+    height: 30px;
+}
+   
+#nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.myself {
+    position: absolute;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.anm {
+    animation: fadeIn 8s linear;
+    animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+    80%{
+        opacity: 0;
+    }
+	100%{
+		opacity: 1;
+	}
+}
+
+a{
+	display: inline-block;
+	position: relative;
+	color: #fff;
+ 	text-decoration: none;
+}
+a:before{
+	content: "";
+	position: absolute;
+	 left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+a:hover:before {
+	transform: scale(1);
+}
+
+
+
+
+span {
+    transition: all 0.5s;
+    transform: translateY(0px) !important;
+}
+.top {
+    margin-top: -17px;
+    transform: rotate(0deg) !important;
+}
+.bottom {
+    margin-top: 17px;
+    transform: rotate(0deg) !important;
+}
+
